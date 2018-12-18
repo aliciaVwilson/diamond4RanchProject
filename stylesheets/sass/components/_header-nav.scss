@@ -3,9 +3,8 @@
 #header-nav{
   width: 100vw;
   padding: 10px 0;
-  background-color: $d4-grey;
+  background-color: $d4-dark;
   @include basic-flex(center, flex-start, column);
-  background-image: url();
   #header-nav-content{
     width: 100%;
     @include basic-flex(space-around, flex-start, row);
@@ -17,9 +16,10 @@
           color: $d4-white;
 
           &:hover{
-
+            color: $hover-color;
+            cursor: pointer;
+            user-select: none;
           }
-
         } //li
       } // ul
       // img{
