@@ -4,4 +4,13 @@
 @import "helpers/reset";
 @import "helpers/typography";
 
+@import "components/vars";
+@import "components/placeholders";
+@import "components/mixins";
+@import "components/header-nav";
 // --- MASTER CONTROLS ---
+
+body{
+  background-color: #CCC;
+  font-family: Helvetica, sans-serif;
+}

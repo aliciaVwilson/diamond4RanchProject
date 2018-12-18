@@ -1,0 +1,31 @@
+// *** HEADER NAV PARTIAL
+
+#header-nav{
+  width: 100vw;
+  padding: 10px 0;
+  background-color: $d4-grey;
+  @include basic-flex(center, flex-start, column);
+  background-image: url();
+  #header-nav-content{
+    width: 100%;
+    @include basic-flex(space-around, flex-start, row);
+      ul{
+        width: 100%;
+        @include basic-flex(space-around, flex-start, row);
+        li{
+          font-size: 1em;
+          color: $d4-white;
+
+          &:hover{
+
+          }
+
+        } //li
+      } // ul
+      // img{
+      //   display: flex;
+      //   justify-content: center;
+      //   width: 100px;
+      // }//img
+  } // header-nav-content
+}// header-nav

@@ -79,29 +79,13 @@ body {
 
 #header-nav {
   width: 100vw;
-  padding: 10px 0;
   background-color: #42403E;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
-  background-image: url(); }
-  #header-nav #header-nav-content {
-    width: 100%;
+  flex-direction: row; }
+  #header-nav #header-nav-content #header-nav-content-left {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row; }
-    #header-nav #header-nav-content ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-direction: row; }
-      #header-nav #header-nav-content ul li {
-        font-size: 1em;
-        color: #CCC; }
-
-body {
-  background-color: #CCC;
-  font-family: Helvetica, sans-serif; }
