@@ -6,15 +6,15 @@
   #heroImg{
     width: 100%;
     height: 755px;
-    background: url('media/imgs/hero-img.jpg');
+    background: url('media/imgs/hero-img-3.jpg');
     background-size: cover;
-    background-position: center;
-    @include basic-flex(flex-start, center, column);
+    background-position: top;
+    @include basic-flex(flex-start, flex-start, column);
     #d4-icon{
-      height: 200px;
-      width: 200px;
-      margin-top: 30px;
-      background-image: url('media/imgs/d4-icon.png');
+      height: 350px;
+      width: 350px;
+      margin-top: 15px;
+      background-image: url('media/imgs/d4-brand-outerText.png');
       background-repeat: no-repeat;
       background-size: contain;
     }

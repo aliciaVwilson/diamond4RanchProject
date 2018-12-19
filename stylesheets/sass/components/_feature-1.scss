@@ -2,6 +2,7 @@
 
 #feature-1{
   width: 100vw;
+  background-color: $d4-blueGrey;
   #feature-1-content{
     width: 100%;
     @include basic-flex(flex-start, center, column);
@@ -9,7 +10,7 @@
       font-size: 3em;
       margin: 30px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
-      color: $d4-dark;
+      color: $d4-neutral;
     }
     h2{
       font-size: 1.75em;
@@ -23,7 +24,7 @@
       line-height: 1.45em;
       text-align: center;
       margin: 40px 0px 60px 0px;
-      color: $d4-dark;
+      color: $d4-neutral;
     }
   }
 }
