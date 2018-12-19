@@ -46,7 +46,20 @@
     font-size: 1.5em;
     line-height: 1.45em;
     text-align: center;
-    margin: 40px 0px 60px 0px;
+    margin: 40px 0px 40px 0px;
     color: $d4-dark;
+  }
+  .button{
+    padding: 15px;
+    background-color: $d4-blueGrey;
+    font-size: 1.3em;
+    color: $d4-white;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: #B2AFA4;
+      cursor: pointer;
+      user-select: none;
+    }
   }
 }//feature-2

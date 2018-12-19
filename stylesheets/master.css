@@ -206,8 +206,18 @@ body {
     font-size: 1.5em;
     line-height: 1.45em;
     text-align: center;
-    margin: 40px 0px 60px 0px;
+    margin: 40px 0px 40px 0px;
     color: #1D2339; }
+  #feature-2 .button {
+    padding: 15px;
+    background-color: #445576;
+    font-size: 1.3em;
+    color: #EBDFD7;
+    border-radius: 5px; }
+    #feature-2 .button:hover {
+      background-color: #B2AFA4;
+      cursor: pointer;
+      user-select: none; }
 
 body {
   background-color: #B2AFA4;
