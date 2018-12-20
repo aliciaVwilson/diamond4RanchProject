@@ -77,6 +77,10 @@ body {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
 
+#feature-2 #feature-2-content #hunting-Img .overlay:hover, #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover, #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover, #feature-2 .button:hover {
+  cursor: pointer;
+  user-select: none; }
+
 #header-nav {
   width: 100vw;
   padding: 10px 0;
@@ -146,12 +150,14 @@ body {
       font-size: 3em;
       margin: 30px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
-      color: #B2AFA4; }
+      color: #B2AFA4;
+      text-align: center; }
     #feature-1 #feature-1-content h2 {
       font-size: 1.75em;
       margin: 10px 0 20px 0;
       font-family: 'Noto Serif TC', serif;
-      color: #1D2339; }
+      color: #1D2339;
+      text-align: center; }
     #feature-1 #feature-1-content p {
       width: 70%;
       font-size: 1.5em;
@@ -176,31 +182,94 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-    #feature-2 #feature-2-content #guided-packtripsImg {
-      width: 400px;
-      height: 300px;
-      background: url("media/imgs/packing-page.jpg") no-repeat;
-      background-size: cover; }
     #feature-2 #feature-2-content #hunting-Img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
       width: 400px;
       height: 300px;
-      background: url("media/imgs/hunting.jpg") no-repeat;
-      background-size: contain; }
+      background: url("media/imgs/hunting2.jpg") no-repeat;
+      background-size: cover; }
+      #feature-2 #feature-2-content #hunting-Img .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        align-self: center;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 2em;
+        color: #1D2339; }
+        #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
+    #feature-2 #feature-2-content #guided-packtripsImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/pack-trips.jpg") no-repeat;
+      background-size: cover;
+      background-position: top; }
+      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        align-self: center;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 2em;
+        color: #1D2339;
+        text-align: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
     #feature-2 #feature-2-content #womens-wellnessImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
       width: 400px;
       height: 300px;
-      background: url("media/imgs/womens-wellness.jpg") no-repeat;
-      background-size: contain; }
+      background: url("media/imgs/womens-wellness2.jpg") no-repeat;
+      background-size: cover;
+      background-position: bottom; }
+      #feature-2 #feature-2-content #womens-wellnessImg .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 2em;
+        color: #1D2339; }
+        #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
   #feature-2 h1 {
     font-size: 3em;
     margin: 30px 0px 10px 0px;
     font-family: 'Noto Serif TC', serif;
-    color: #1D2339; }
+    color: #1D2339;
+    text-align: center; }
   #feature-2 h2 {
     font-size: 1.75em;
     margin: 10px 0 20px 0;
     font-family: 'Noto Serif TC', serif;
-    color: #1D2339; }
+    color: #1D2339;
+    text-align: center; }
   #feature-2 p {
     width: 70%;
     font-size: 1.5em;
@@ -215,9 +284,7 @@ body {
     color: #EBDFD7;
     border-radius: 5px; }
     #feature-2 .button:hover {
-      background-color: #B2AFA4;
-      cursor: pointer;
-      user-select: none; }
+      background-color: #B2AFA4; }
 
 body {
   background-color: #B2AFA4;

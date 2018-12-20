@@ -10,23 +10,88 @@
     width: 90%;
     height: 400px;
     @include basic-flex(space-between, center, row);
-      #guided-packtripsImg{
-        width: 400px;
-        height: 300px;
-        background: url('media/imgs/packing-page.jpg') no-repeat;
-        background-size: cover;
-      }//guided-packtripsImg
+
+
       #hunting-Img{
+        @include basic-flex(center, center, row);
         width: 400px;
         height: 300px;
-        background: url('media/imgs/hunting.jpg') no-repeat;
-        background-size: contain;
+        background: url('media/imgs/hunting2.jpg') no-repeat;
+        background-size: cover;
+
+
+        .overlay{
+          @include basic-flex(center, start, row);
+          width: 90%;
+          height: 90%;
+          border: 2px solid $d4-white;
+          align-self: center;
+          font-family:'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 2em;
+          color: $d4-dark;
+
+          &:hover{
+            @extend %fake-link;
+            background-color: $d4-white;
+            opacity: .8;
+          }
+        }
       }//hunting-Img
-      #womens-wellnessImg{
+      #guided-packtripsImg{
+        @include basic-flex(center, center, row);
         width: 400px;
         height: 300px;
-        background: url('media/imgs/womens-wellness.jpg') no-repeat;
-        background-size: contain;
+        background: url('media/imgs/pack-trips.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+
+
+        .overlay{
+          @include basic-flex(center, start, row);
+          width: 90%;
+          height: 90%;
+          border: 2px solid $d4-white;
+          align-self: center;
+          font-family:'Noto Serif TC', serif;
+          font-size: 2em;
+          color: $d4-dark;
+          text-align: center;
+
+          &:hover{
+            @extend %fake-link;
+            background-color: $d4-white;
+            opacity: .8;
+          }
+        }
+
+
+      }//guided-packtripsImg
+      #womens-wellnessImg{
+        @include basic-flex(center, center, row);
+        width: 400px;
+        height: 300px;
+        background: url('media/imgs/womens-wellness2.jpg') no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+
+        .overlay{
+          @include basic-flex(center, flex-start, row);
+          width: 90%;
+          height: 90%;
+          border: 2px solid $d4-white;
+          font-family:'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 2em;
+          color: $d4-dark;
+
+          &:hover{
+            @extend %fake-link;
+            background-color: $d4-white;
+            opacity: .8;
+          }
+        }
       }//womens-wellnessImg
   }// feature-2-content
   h1{
@@ -34,12 +99,14 @@
       margin: 30px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
       color: $d4-dark;
+      text-align: center;
   }
   h2{
     font-size: 1.75em;
     margin: 10px 0 20px 0;
     font-family: 'Noto Serif TC', serif;
     color: $d4-dark;
+    text-align: center;
   }
   p{
     width: 70%;
@@ -58,8 +125,7 @@
 
     &:hover{
       background-color: #B2AFA4;
-      cursor: pointer;
-      user-select: none;
+      @extend %fake-link;
     }
   }
 }//feature-2
