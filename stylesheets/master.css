@@ -77,10 +77,14 @@ body {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
 
+#feature-2 #feature-2-content #hunting-Img .overlay:hover, #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover, #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover, #feature-2 .button:hover {
+  cursor: pointer;
+  user-select: none; }
+
 #header-nav {
   width: 100vw;
   padding: 10px 0;
-  background-color: #111D17;
+  background-color: #1D2339;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -99,9 +103,9 @@ body {
       flex-direction: row; }
       #header-nav #header-nav-content ul li {
         font-size: 1em;
-        color: #CCD2CE; }
+        color: #EBDFD7; }
         #header-nav #header-nav-content ul li:hover {
-          color: #4E513E;
+          color: #445576;
           cursor: pointer;
           user-select: none; }
 
@@ -114,18 +118,18 @@ body {
   #heroContent #heroImg {
     width: 100%;
     height: 755px;
-    background: url("media/imgs/hero-img.jpg");
+    background: url("media/imgs/hero-img-3.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column; }
     #heroContent #heroImg #d4-icon {
-      height: 200px;
-      width: 200px;
-      margin-top: 30px;
-      background-image: url("media/imgs/d4-icon.png");
+      height: 350px;
+      width: 350px;
+      margin-top: 15px;
+      background-image: url("media/imgs/d4-brand-outerText.png");
       background-repeat: no-repeat;
       background-size: contain; }
     #heroContent #heroImg h2 {
@@ -134,7 +138,8 @@ body {
       line-height: 1.45em; }
 
 #feature-1 {
-  width: 100vw; }
+  width: 100vw;
+  background-color: #445576; }
   #feature-1 #feature-1-content {
     width: 100%;
     display: flex;
@@ -145,21 +150,143 @@ body {
       font-size: 3em;
       margin: 30px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
-      color: #111D17; }
+      color: #B2AFA4;
+      text-align: center; }
     #feature-1 #feature-1-content h2 {
       font-size: 1.75em;
       margin: 10px 0 20px 0;
       font-family: 'Noto Serif TC', serif;
-      color: #111D17; }
+      color: #1D2339;
+      text-align: center; }
     #feature-1 #feature-1-content p {
       width: 70%;
       font-size: 1.5em;
       line-height: 1.45em;
       text-align: center;
       margin: 40px 0px 60px 0px;
-      color: #111D17; }
+      color: #B2AFA4; }
+
+#feature-2 {
+  width: 100vw;
+  height: 1500px;
+  background: url("media/imgs/faded-background.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+  #feature-2 #feature-2-content {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    #feature-2 #feature-2-content #hunting-Img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/hunting2.jpg") no-repeat;
+      background-size: cover; }
+      #feature-2 #feature-2-content #hunting-Img .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        align-self: center;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 2em;
+        color: #1D2339; }
+        #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
+    #feature-2 #feature-2-content #guided-packtripsImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/pack-trips.jpg") no-repeat;
+      background-size: cover;
+      background-position: top; }
+      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        align-self: center;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 2em;
+        color: #1D2339;
+        text-align: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
+    #feature-2 #feature-2-content #womens-wellnessImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/womens-wellness2.jpg") no-repeat;
+      background-size: cover;
+      background-position: bottom; }
+      #feature-2 #feature-2-content #womens-wellnessImg .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 2em;
+        color: #1D2339; }
+        #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
+  #feature-2 h1 {
+    font-size: 3em;
+    margin: 30px 0px 10px 0px;
+    font-family: 'Noto Serif TC', serif;
+    color: #1D2339;
+    text-align: center; }
+  #feature-2 h2 {
+    font-size: 1.75em;
+    margin: 10px 0 20px 0;
+    font-family: 'Noto Serif TC', serif;
+    color: #1D2339;
+    text-align: center; }
+  #feature-2 p {
+    width: 70%;
+    font-size: 1.5em;
+    line-height: 1.45em;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+    color: #1D2339; }
+  #feature-2 .button {
+    padding: 15px;
+    background-color: #445576;
+    font-size: 1.4em;
+    color: #EBDFD7;
+    border-radius: 5px; }
+    #feature-2 .button:hover {
+      background-color: #B2AFA4; }
 
 body {
-  background-color: #CCC;
+  background-color: #B2AFA4;
   font-family: 'Poppins', sans-serif;
-  color: #111D17; }
+  color: #1D2339; }
