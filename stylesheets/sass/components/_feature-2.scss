@@ -11,80 +11,53 @@
     height: 400px;
     @include basic-flex(space-between, center, row);
 
+    #mrv-imgs{
+      @include basic-flex(center, center, row);
+      width: 400px;
+      height: 300px;
+      background: url('media/imgs/mrv-img.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
 
-      #hunting-Img{
-        @include basic-flex(center, center, row);
-        width: 400px;
-        height: 300px;
-        background: url('media/imgs/hunting2.jpg') no-repeat;
-        background-size: cover;
 
+      .overlay{
+        @include basic-flex(center, flex-start, row);
+        width: 90%;
+        height: 90%;
+        border: 2px solid $d4-white;
+        font-family:'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 1.8em;
+        color: $d4-dark;
 
-        .overlay{
-          @include basic-flex(center, start, row);
-          width: 90%;
-          height: 90%;
-          border: 2px solid $d4-white;
-          align-self: center;
-          font-family:'Noto Serif TC', serif;
-          text-align: center;
-          font-size: 2em;
-          color: $d4-dark;
-
-          &:hover{
-            @extend %fake-link;
-            background-color: $d4-white;
-            opacity: .8;
-          }
+        &:hover{
+          @extend %fake-link;
+          background-color: $d4-white;
+          opacity: .8;
         }
-      }//hunting-Img
+      }
+    }//mrv-imgs
+
+
       #guided-packtripsImg{
         @include basic-flex(center, center, row);
         width: 400px;
         height: 300px;
-        background: url('media/imgs/pack-trips.jpg') no-repeat;
-        background-size: cover;
-        background-position: top;
-
-
-        .overlay{
-          @include basic-flex(center, start, row);
-          width: 90%;
-          height: 90%;
-          border: 2px solid $d4-white;
-          align-self: center;
-          font-family:'Noto Serif TC', serif;
-          font-size: 2em;
-          color: $d4-dark;
-          text-align: center;
-
-          &:hover{
-            @extend %fake-link;
-            background-color: $d4-white;
-            opacity: .8;
-          }
-        }
-
-
-      }//guided-packtripsImg
-      #womens-wellnessImg{
-        @include basic-flex(center, center, row);
-        width: 400px;
-        height: 300px;
-        background: url('media/imgs/womens-wellness2.jpg') no-repeat;
+        background: url('media/imgs/wilderness-pac.jpg') no-repeat;
         background-size: cover;
         background-position: bottom;
 
 
         .overlay{
-          @include basic-flex(center, flex-start, row);
+          @include basic-flex(center, start, row);
           width: 90%;
           height: 90%;
           border: 2px solid $d4-white;
+          align-self: center;
           font-family:'Noto Serif TC', serif;
-          text-align: center;
-          font-size: 2em;
+          font-size: 1.8em;
           color: $d4-dark;
+          text-align: center;
 
           &:hover{
             @extend %fake-link;
@@ -92,7 +65,34 @@
             opacity: .8;
           }
         }
-      }//womens-wellnessImg
+      }//guided-packtripsImg
+      #hunting-Img{
+          @include basic-flex(center, center, row);
+          width: 400px;
+          height: 300px;
+          background: url('media/imgs/hunting3.jpg') no-repeat;
+          background-size: cover;
+          background-position: top;
+
+
+          .overlay{
+            @include basic-flex(center, start, row);
+            width: 90%;
+            height: 90%;
+            border: 2px solid $d4-white;
+            align-self: center;
+            font-family:'Noto Serif TC', serif;
+            text-align: center;
+            font-size: 1.8em;
+            color: $d4-dark;
+
+            &:hover{
+              @extend %fake-link;
+              background-color: $d4-white;
+              opacity: .8;
+            }
+          }
+        }//hunting-Img
   }// feature-2-content
   h1{
       font-size: 3em;

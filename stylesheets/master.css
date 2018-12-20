@@ -77,7 +77,7 @@ body {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
 
-#feature-2 #feature-2-content #hunting-Img .overlay:hover, #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover, #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover, #feature-2 .button:hover {
+#feature-2 #feature-2-content #mrv-imgs .overlay:hover, #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover, #feature-2 #feature-2-content #hunting-Img .overlay:hover, #feature-2 .button:hover {
   cursor: pointer;
   user-select: none; }
 
@@ -190,6 +190,57 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
+    #feature-2 #feature-2-content #mrv-imgs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/mrv-img.jpg") no-repeat;
+      background-size: cover;
+      background-position: center; }
+      #feature-2 #feature-2-content #mrv-imgs .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 1.8em;
+        color: #1D2339; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
+    #feature-2 #feature-2-content #guided-packtripsImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 400px;
+      height: 300px;
+      background: url("media/imgs/wilderness-pac.jpg") no-repeat;
+      background-size: cover;
+      background-position: bottom; }
+      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+        border: 2px solid #EBDFD7;
+        align-self: center;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.8em;
+        color: #1D2339;
+        text-align: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+          background-color: #EBDFD7;
+          opacity: .8; }
     #feature-2 #feature-2-content #hunting-Img {
       display: flex;
       justify-content: center;
@@ -197,8 +248,9 @@ body {
       flex-direction: row;
       width: 400px;
       height: 300px;
-      background: url("media/imgs/hunting2.jpg") no-repeat;
-      background-size: cover; }
+      background: url("media/imgs/hunting3.jpg") no-repeat;
+      background-size: cover;
+      background-position: top; }
       #feature-2 #feature-2-content #hunting-Img .overlay {
         display: flex;
         justify-content: center;
@@ -210,60 +262,9 @@ body {
         align-self: center;
         font-family: 'Noto Serif TC', serif;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.8em;
         color: #1D2339; }
         #feature-2 #feature-2-content #hunting-Img .overlay:hover {
-          background-color: #EBDFD7;
-          opacity: .8; }
-    #feature-2 #feature-2-content #guided-packtripsImg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      width: 400px;
-      height: 300px;
-      background: url("media/imgs/pack-trips.jpg") no-repeat;
-      background-size: cover;
-      background-position: top; }
-      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: row;
-        width: 90%;
-        height: 90%;
-        border: 2px solid #EBDFD7;
-        align-self: center;
-        font-family: 'Noto Serif TC', serif;
-        font-size: 2em;
-        color: #1D2339;
-        text-align: center; }
-        #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
-          background-color: #EBDFD7;
-          opacity: .8; }
-    #feature-2 #feature-2-content #womens-wellnessImg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      width: 400px;
-      height: 300px;
-      background: url("media/imgs/womens-wellness2.jpg") no-repeat;
-      background-size: cover;
-      background-position: bottom; }
-      #feature-2 #feature-2-content #womens-wellnessImg .overlay {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
-        width: 90%;
-        height: 90%;
-        border: 2px solid #EBDFD7;
-        font-family: 'Noto Serif TC', serif;
-        text-align: center;
-        font-size: 2em;
-        color: #1D2339; }
-        #feature-2 #feature-2-content #womens-wellnessImg .overlay:hover {
           background-color: #EBDFD7;
           opacity: .8; }
   #feature-2 h1 {
