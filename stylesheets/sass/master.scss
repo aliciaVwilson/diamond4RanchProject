@@ -8,9 +8,13 @@
 @import "components/placeholders";
 @import "components/mixins";
 @import "components/header-nav";
+@import "components/hero";
+@import "components/feature-1.scss";
+@import "components/feature-2.scss";
 // --- MASTER CONTROLS ---
 
 body{
-  background-color: #CCC;
-  font-family: Helvetica, sans-serif;
+  background-color: $d4-neutral;
+  font-family: 'Poppins', sans-serif;
+  color: $d4-dark;
 }
