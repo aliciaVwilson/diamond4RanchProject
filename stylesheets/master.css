@@ -83,31 +83,42 @@ body {
 
 #header-nav {
   width: 100vw;
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: #1D2339;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column; }
   #header-nav #header-nav-content {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row; }
-    #header-nav #header-nav-content ul {
-      width: 100%;
+    #header-nav #header-nav-content #nav-content-left {
+      padding-left: 15px; }
+    #header-nav #header-nav-content #nav-content-right {
+      width: 70%;
       display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-direction: row; }
-      #header-nav #header-nav-content ul li {
-        font-size: 1em;
-        color: #EBDFD7; }
-        #header-nav #header-nav-content ul li:hover {
-          color: #445576;
-          cursor: pointer;
-          user-select: none; }
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      padding-right: 15px; }
+      #header-nav #header-nav-content #nav-content-right ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row; }
+        #header-nav #header-nav-content #nav-content-right ul li {
+          font-family: 'Noto Serif TC', serif;
+          font-size: .85em;
+          color: #EBDFD7;
+          margin-right: 15px; }
+          #header-nav #header-nav-content #nav-content-right ul li:hover {
+            color: #445576;
+            cursor: pointer;
+            user-select: none; }
 
 #heroContent {
   width: 100vw;
@@ -128,10 +139,7 @@ body {
     #heroContent #heroImg #d4-icon {
       height: 350px;
       width: 350px;
-      margin-top: 15px;
-      background-image: url("media/imgs/d4-brand-outerText.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
+      margin-top: 15px; }
     #heroContent #heroImg h2 {
       width: 700px;
       font-size: 1.5em;
