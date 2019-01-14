@@ -5,6 +5,7 @@
   height: 1500px;
   background: url('media/imgs/faded-background.jpg') no-repeat;
   background-size: cover;
+
   @include basic-flex(flex-start, center, column);
   #feature-2-content{
     width: 90%;

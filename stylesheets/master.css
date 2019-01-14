@@ -335,4 +335,5 @@ body {
 body {
   background-color: #B2AFA4;
   font-family: 'Poppins', sans-serif;
-  color: #1D2339; }
+  color: #1D2339;
+  width: 100vw; }
