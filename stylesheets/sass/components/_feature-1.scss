@@ -1,32 +1,179 @@
 // *** FEATURE 1 PARTIAL ***
-
 #feature-1{
   width: 100vw;
   background-color: $d4-blueGrey;
+  padding-top: 15px;
   #feature-1-content{
     width: 100%;
     @include basic-flex(flex-start, center, column);
     h1{
-      font-size: 3em;
+      width: 80%;
+      font-size: 2em;
       margin: 10px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
       color: $d4-neutral;
       text-align: center;
     }
     h2{
-      font-size: 1.75em;
-      margin: 10px 0 20px 0;
+      width: 80%;
+      font-size: 1.2em;
+      margin: 10px 0 10px 0;
       font-family: 'Noto Serif TC', serif;
       color: $d4-dark;
       text-align: center;
     }
+    .d4-divider{
+      width: 80%;
+      height: 90px;
+      background-image: url('media/imgs/d4-divider.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     p{
       width: 70%;
-      font-size: 1.5em;
+      font-size: 1em;
       line-height: 1.45em;
       text-align: center;
-      margin: 40px 0px 20px 0px;
+      margin: 10px 0px 20px 0px;
       color: $d4-neutral;
+    }
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+ // same
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #feature-1{
+    width: 100vw;
+    background-color: $d4-blueGrey;
+    padding-top: 15px;
+    #feature-1-content{
+      width: 100%;
+      @include basic-flex(flex-start, center, column);
+      h1{
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-neutral;
+        text-align: center;
+      }
+      h2{
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-dark;
+        text-align: center;
+      }
+      .d4-divider{
+        width: 80%;
+        height: 90px;
+        background-image: url('media/imgs/d4-divider.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      p{
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: $d4-neutral;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #feature-1{
+    width: 100vw;
+    background-color: $d4-blueGrey;
+    padding-top: 15px;
+    #feature-1-content{
+      width: 100%;
+      @include basic-flex(flex-start, center, column);
+      h1{
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-neutral;
+        text-align: center;
+      }
+      h2{
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-dark;
+        text-align: center;
+      }
+      .d4-divider{
+        width: 80%;
+        height: 90px;
+        background-image: url('media/imgs/d4-divider.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      p{
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: $d4-neutral;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #feature-1{
+    width: 100vw;
+    background-color: $d4-blueGrey;
+    padding-top: 15px;
+    #feature-1-content{
+      width: 100%;
+      @include basic-flex(flex-start, center, column);
+      h1{
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-neutral;
+        text-align: center;
+      }
+      h2{
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: $d4-dark;
+        text-align: center;
+      }
+      .d4-divider{
+        width: 80%;
+        height: 90px;
+        background-image: url('media/imgs/d4-divider.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      p{
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: $d4-neutral;
+      }
     }
   }
 }

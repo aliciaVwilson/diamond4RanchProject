@@ -77,10 +77,6 @@ body {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
 
-#feature-2 #feature-2-content #mrv-imgs .overlay:hover, #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover, #feature-2 #feature-2-content #hunting-Img .overlay:hover, #feature-2 .button:hover {
-  cursor: pointer;
-  user-select: none; }
-
 .collapse,
 .navbar-collapse {
   width: 30%;
@@ -112,7 +108,8 @@ body {
 
 #feature-1 {
   width: 100vw;
-  background-color: #445576; }
+  background-color: #445576;
+  padding-top: 15px; }
   #feature-1 #feature-1-content {
     width: 100%;
     display: flex;
@@ -120,51 +117,175 @@ body {
     align-items: center;
     flex-direction: column; }
     #feature-1 #feature-1-content h1 {
-      font-size: 3em;
+      width: 80%;
+      font-size: 2em;
       margin: 10px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
       color: #B2AFA4;
       text-align: center; }
     #feature-1 #feature-1-content h2 {
-      font-size: 1.75em;
-      margin: 10px 0 20px 0;
+      width: 80%;
+      font-size: 1.2em;
+      margin: 10px 0 10px 0;
       font-family: 'Noto Serif TC', serif;
       color: #1D2339;
       text-align: center; }
+    #feature-1 #feature-1-content .d4-divider {
+      width: 80%;
+      height: 90px;
+      background-image: url("media/imgs/d4-divider.png");
+      background-position: center;
+      background-repeat: no-repeat; }
     #feature-1 #feature-1-content p {
       width: 70%;
-      font-size: 1.5em;
+      font-size: 1em;
       line-height: 1.45em;
       text-align: center;
-      margin: 40px 0px 20px 0px;
+      margin: 10px 0px 20px 0px;
       color: #B2AFA4; }
+
+@media (min-width: 768px) {
+  #feature-1 {
+    width: 100vw;
+    background-color: #445576;
+    padding-top: 15px; }
+    #feature-1 #feature-1-content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      #feature-1 #feature-1-content h1 {
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: #B2AFA4;
+        text-align: center; }
+      #feature-1 #feature-1-content h2 {
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: #1D2339;
+        text-align: center; }
+      #feature-1 #feature-1-content .d4-divider {
+        width: 80%;
+        height: 90px;
+        background-image: url("media/imgs/d4-divider.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      #feature-1 #feature-1-content p {
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: #B2AFA4; } }
+
+@media (min-width: 992px) {
+  #feature-1 {
+    width: 100vw;
+    background-color: #445576;
+    padding-top: 15px; }
+    #feature-1 #feature-1-content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      #feature-1 #feature-1-content h1 {
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: #B2AFA4;
+        text-align: center; }
+      #feature-1 #feature-1-content h2 {
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: #1D2339;
+        text-align: center; }
+      #feature-1 #feature-1-content .d4-divider {
+        width: 80%;
+        height: 90px;
+        background-image: url("media/imgs/d4-divider.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      #feature-1 #feature-1-content p {
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: #B2AFA4; } }
+
+@media (min-width: 1200px) {
+  #feature-1 {
+    width: 100vw;
+    background-color: #445576;
+    padding-top: 15px; }
+    #feature-1 #feature-1-content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      #feature-1 #feature-1-content h1 {
+        width: 80%;
+        font-size: 3em;
+        margin: 10px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: #B2AFA4;
+        text-align: center; }
+      #feature-1 #feature-1-content h2 {
+        width: 80%;
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: #1D2339;
+        text-align: center; }
+      #feature-1 #feature-1-content .d4-divider {
+        width: 80%;
+        height: 90px;
+        background-image: url("media/imgs/d4-divider.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      #feature-1 #feature-1-content p {
+        width: 70%;
+        font-size: 1.45em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        color: #B2AFA4; } }
 
 #feature-2 {
   width: 100vw;
-  height: 1500px;
-  background: url("media/imgs/faded-background.jpg") no-repeat;
-  background-size: cover;
+  background-color: #F3F2F2;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 40px 0px; }
   #feature-2 #feature-2-content {
     width: 90%;
-    height: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row; }
+    flex-direction: column; }
     #feature-2 #feature-2-content #mrv-imgs {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      width: 400px;
+      width: 100%;
       height: 300px;
+      margin: 20px 0px;
       background: url("media/imgs/mrv-img.jpg") no-repeat;
       background-size: cover;
-      background-position: center; }
+      background-position: bottom; }
       #feature-2 #feature-2-content #mrv-imgs .overlay {
         display: flex;
         justify-content: center;
@@ -185,11 +306,12 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      width: 400px;
+      width: 100%;
       height: 300px;
+      margin: 20px 0px;
       background: url("media/imgs/wilderness-pac.jpg") no-repeat;
       background-size: cover;
-      background-position: bottom; }
+      background-position: center; }
       #feature-2 #feature-2-content #guided-packtripsImg .overlay {
         display: flex;
         justify-content: center;
@@ -211,11 +333,11 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      width: 400px;
+      width: 100%;
       height: 300px;
+      margin: 20px 0px;
       background: url("media/imgs/hunting3.jpg") no-repeat;
-      background-size: cover;
-      background-position: top; }
+      background-size: cover; }
       #feature-2 #feature-2-content #hunting-Img .overlay {
         display: flex;
         justify-content: center;
@@ -232,64 +354,393 @@ body {
         #feature-2 #feature-2-content #hunting-Img .overlay:hover {
           background-color: #EBDFD7;
           opacity: .8; }
-  #feature-2 h1 {
-    font-size: 3em;
-    margin: 30px 0px 10px 0px;
-    font-family: 'Noto Serif TC', serif;
-    color: #1D2339;
-    text-align: center; }
-  #feature-2 h2 {
-    font-size: 1.75em;
-    margin: 10px 0 20px 0;
-    font-family: 'Noto Serif TC', serif;
-    color: #1D2339;
-    text-align: center; }
-  #feature-2 p {
-    width: 70%;
-    font-size: 1.5em;
-    line-height: 1.45em;
-    text-align: center;
-    margin: 40px 0px 40px 0px;
-    color: #1D2339; }
-  #feature-2 .button {
-    padding: 15px;
-    background-color: #445576;
-    font-size: 1.4em;
-    color: #EBDFD7;
-    border-radius: 5px; }
-    #feature-2 .button:hover {
-      background-color: #B2AFA4; }
 
-#feature-3 {
+@media (min-width: 576px) {
+  #feature-2 {
+    width: 100vw;
+    background-color: #F3F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px; }
+    #feature-2 #feature-2-content {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #feature-2 #feature-2-content #mrv-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 400px;
+        margin: 20px 0px;
+        background: url("media/imgs/mrv-img.jpg") no-repeat;
+        background-size: cover;
+        background-position: bottom; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #guided-packtripsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 400px;
+        margin: 20px 0px;
+        background: url("media/imgs/wilderness-pac.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          font-size: 1.8em;
+          color: #1D2339;
+          text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #hunting-Img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 400px;
+        margin: 20px 0px;
+        background: url("media/imgs/hunting3.jpg") no-repeat;
+        background-size: cover; }
+        #feature-2 #feature-2-content #hunting-Img .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; } }
+
+@media (min-width: 768px) {
+  #feature-2 {
+    width: 100vw;
+    background-color: #F3F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px; }
+    #feature-2 #feature-2-content {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #feature-2 #feature-2-content #mrv-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 450px;
+        margin: 20px 0px;
+        background: url("media/imgs/mrv-img.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #guided-packtripsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 450px;
+        margin: 20px 0px;
+        background: url("media/imgs/wilderness-pac.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          font-size: 1.8em;
+          color: #1D2339;
+          text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #hunting-Img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 450px;
+        margin: 20px 0px;
+        background: url("media/imgs/hunting3.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #hunting-Img .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; } }
+
+@media (min-width: 992px) {
+  #feature-2 {
+    width: 100vw;
+    background-color: #F3F2F2;
+    padding: 40px 0px; }
+    #feature-2 #feature-2-content {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row; }
+      #feature-2 #feature-2-content #mrv-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/mrv-img.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #guided-packtripsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/wilderness-pac.jpg") no-repeat;
+        background-size: cover;
+        background-position: bottom; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          font-size: 1.8em;
+          color: #1D2339;
+          text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+      #feature-2 #feature-2-content #hunting-Img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/hunting3.jpg") no-repeat;
+        background-size: cover;
+        background-position: top; }
+        #feature-2 #feature-2-content #hunting-Img .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: row;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; } }
+
+.feature-3 {
   width: 100vw;
-  padding: 30px;
+  height: 1000px;
+  background-image: url("media/imgs/faded-background.jpg");
+  background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column; }
-  #feature-3 #feature-3-content {
-    width: 80%; }
-    #feature-3 #feature-3-content h1 {
-      font-size: 3em;
+  .feature-3 .feature-3-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .feature-3 .feature-3-container h1 {
+      font-size: 2em;
+      margin: 30px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
-      text-align: center; }
-    #feature-3 #feature-3-content #review {
-      width: 100%;
-      font-size: 1.5em;
-      line-height: 1.45em;
-      margin: 40px 0px 40px 0px;
-      color: #1D2339; }
-    #feature-3 #feature-3-content p {
-      align-self: flex-end;
-      width: 100%;
-      font-size: 1.5em;
-      line-height: 1.45em;
-      margin: 40px 0px 40px 0px;
       color: #1D2339;
-      text-align: left; }
+      text-align: center; }
+    .feature-3 .feature-3-container h2 {
+      font-size: 1.2em;
+      margin: 10px 0 10px 0;
+      font-family: 'Noto Serif TC', serif;
+      color: #1D2339;
+      text-align: center; }
+    .feature-3 .feature-3-container .d4-divider {
+      width: 100%;
+      height: 130px;
+      background-image: url("media/imgs/d4-divider.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    .feature-3 .feature-3-container p {
+      width: 95%;
+      font-size: 1em;
+      line-height: 1.45em;
+      text-align: center;
+      margin: 5px 0px 40px 0px;
+      color: #1D2339; }
+    .feature-3 .feature-3-container .button {
+      padding: 15px;
+      background-color: #445576;
+      font-size: 1.4em;
+      color: #EBDFD7;
+      border-radius: 5px;
+      margin-bottom: 20px; }
+      .feature-3 .feature-3-container .button:hover {
+        background-color: #B2AFA4; }
+
+@media (min-width: 768px) {
+  .feature-3 {
+    width: 100vw;
+    height: 1000px;
+    background-image: url("media/imgs/faded-background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .feature-3 .feature-3-container {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .feature-3 .feature-3-container h1 {
+        font-size: 3em;
+        margin: 30px 0px 10px 0px;
+        font-family: 'Noto Serif TC', serif;
+        color: #1D2339;
+        text-align: center; }
+      .feature-3 .feature-3-container h2 {
+        font-size: 1.75em;
+        margin: 10px 0 10px 0;
+        font-family: 'Noto Serif TC', serif;
+        color: #1D2339;
+        text-align: center; }
+      .feature-3 .feature-3-container .d4-divider {
+        width: 100%;
+        height: 130px;
+        background-image: url("media/imgs/d4-divider.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      .feature-3 .feature-3-container p {
+        width: 95%;
+        font-size: 1.5em;
+        line-height: 1.45em;
+        text-align: center;
+        margin: 5px 0px 40px 0px;
+        color: #1D2339; }
+      .feature-3 .feature-3-container .button {
+        padding: 15px;
+        background-color: #445576;
+        font-size: 1.4em;
+        color: #EBDFD7;
+        border-radius: 5px;
+        margin-bottom: 20px; }
+        .feature-3 .feature-3-container .button:hover {
+          background-color: #B2AFA4; } }
 
 body {
-  background-color: #B2AFA4;
+  background-color: #EBDFD7;
   font-family: 'Poppins', sans-serif;
   color: #1D2339;
   width: 100vw; }

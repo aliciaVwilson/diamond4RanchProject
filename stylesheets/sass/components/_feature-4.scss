@@ -1,0 +1,79 @@
+// ***FEATURE 4 PARTIAL ***
+
+.feature-4{
+  width: 100vw;
+  padding: 30px;
+  @include basic-flex(center, center, column);
+  .feature-4-content{
+    width: 80%;
+    h1{
+      font-size: 2em;
+      font-family: 'Noto Serif TC', serif;
+      text-align: center;
+    }
+    #review{
+      width: 100%;
+      font-size: 1.2em;
+      line-height: 1.45em;
+      margin: 40px 0px 40px 0px;
+      color: $d4-dark;
+    }
+    p{
+      align-self: flex-end;
+      width: 100%;
+      font-size: 1em;
+      line-height: 1.45em;
+      margin: 40px 0px 40px 0px;
+      color: $d4-dark;
+      text-align: left;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  //same
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #feature-4{
+    width: 100vw;
+    padding: 30px;
+    @include basic-flex(center, center, column);
+    #feature-4-content{
+      width: 80%;
+      h1{
+        font-size: 3em;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+      }
+      #review{
+        width: 100%;
+        font-size: 1.75em;
+        line-height: 1.45em;
+        margin: 40px 0px 40px 0px;
+        color: $d4-dark;
+      }
+      p{
+        align-self: flex-end;
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.45em;
+        margin: 40px 0px 40px 0px;
+        color: $d4-dark;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+ //same
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  //same
+}
