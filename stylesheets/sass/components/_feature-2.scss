@@ -6,37 +6,50 @@
   @include basic-flex(flex-start, center, column);
   padding: 40px 0px;
 
+
   #feature-2-content{
     width: 90%;
     @include basic-flex(center, center, column);
-
-    #mrv-imgs{
-      @include basic-flex(center, center, row);
-      width: 100%;
-      height: 300px;
-      margin: 20px 0px;
-      background: url('media/imgs/mrv-img.jpg') no-repeat;
-      background-size: cover;
-      background-position: bottom;
-
-
-      .overlay{
-        @include basic-flex(center, flex-start, row);
-        width: 90%;
-        height: 90%;
-        border: 2px solid $d4-white;
-        font-family:'Noto Serif TC', serif;
-        text-align: center;
-        font-size: 1.8em;
-        color: $d4-dark;
-
-        &:hover{
-          background-color: $d4-white;
-          opacity: .8;
+      #mrv-imgs{
+        @include basic-flex(center, center, row);
+        width: 100%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url('media/imgs/mrv-img.jpg') no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        .image-link{
+          height: 100%;
+          width: 100%;
+          @include basic-flex(center, center, row);
         }
-      }
-    }//mrv-imgs
+        .overlay{
+          @include basic-flex(flex-start, center, column);
+          width: 90%;
+          height: 90%;
+          border: 2px solid $d4-white;
+          font-family:'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: $d4-dark;
+          .hide-until-hovered{
+            display: none;
+          }
 
+          &:hover{
+            background-color: $d4-white;
+            opacity: .8;
+            .hide-until-hovered{
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: $master-font;
+              font-size: .5em;
+              line-height: 1.2em;
+            }//hide-until-hovered
+          }//hover
+        }//overlay
+      }//mrv-imgs
 
       #guided-packtripsImg{
         @include basic-flex(center, center, row);
@@ -47,24 +60,40 @@
         background-size: cover;
         background-position: center;
 
-
+        .image-link{
+          height: 100%;
+          width: 100%;
+          @include basic-flex(center, center, row);
+        }
         .overlay{
-          @include basic-flex(center, start, row);
+          @include basic-flex(flex-start, center, column);
           width: 90%;
           height: 90%;
           border: 2px solid $d4-white;
           align-self: center;
           font-family:'Noto Serif TC', serif;
-          font-size: 1.8em;
+          font-size: 1.9em;
           color: $d4-dark;
           text-align: center;
+          .hide-until-hovered{
+            display: none;
+          }
 
           &:hover{
             background-color: $d4-white;
             opacity: .8;
-          }
-        }
+            .hide-until-hovered{
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family:$master-font;
+              font-size: .5em;
+              line-height: 1.2em;
+            }//hide-until-hovered
+          }//hover
+        }//overlay
       }//guided-packtripsImg
+
       #hunting-Img{
           @include basic-flex(center, center, row);
           width: 100%;
@@ -73,9 +102,14 @@
           background: url('media/imgs/hunting3.jpg') no-repeat;
           background-size: cover;
 
+          .image-link{
+            height: 100%;
+            width: 100%;
+            @include basic-flex(center, center, row);
+          }
 
           .overlay{
-            @include basic-flex(center, start, row);
+            @include basic-flex(flex-start, center, column);
             width: 90%;
             height: 90%;
             border: 2px solid $d4-white;
@@ -84,113 +118,32 @@
             text-align: center;
             font-size: 1.8em;
             color: $d4-dark;
+            .hide-until-hovered{
+              display: none;
+            }
 
             &:hover{
               background-color: $d4-white;
               opacity: .8;
-            }
-          }
+
+              .hide-until-hovered{
+                width: 90%;
+                display: inline;
+                margin-top: 15px;
+                font-family:$master-font;
+                font-size: .5em;
+                line-height: 1.2em;
+              }//hide-until-hovered
+            }//hover
+            }//overlay
         }//hunting-Img
   }// feature-2-content
 }//feature-2
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  #feature-2{
-    width: 100vw;
-    background-color: #F3F2F2;
-    @include basic-flex(flex-start, center, column);
-    padding: 40px 0px;
-
-    #feature-2-content{
-      width: 90%;
-      @include basic-flex(center, center, column);
-
-      #mrv-imgs{
-        @include basic-flex(center, center, row);
-        width: 100%;
-        height: 400px;
-        margin: 20px 0px;
-        background: url('media/imgs/mrv-img.jpg') no-repeat;
-        background-size: cover;
-        background-position: bottom;
-
-
-        .overlay{
-          @include basic-flex(center, flex-start, row);
-          width: 90%;
-          height: 90%;
-          border: 2px solid $d4-white;
-          font-family:'Noto Serif TC', serif;
-          text-align: center;
-          font-size: 1.8em;
-          color: $d4-dark;
-
-          &:hover{
-            background-color: $d4-white;
-            opacity: .8;
-          }
-        }
-      }//mrv-imgs
-
-
-        #guided-packtripsImg{
-          @include basic-flex(center, center, row);
-          width: 100%;
-          height: 400px;
-          margin: 20px 0px;
-          background: url('media/imgs/wilderness-pac.jpg') no-repeat;
-          background-size: cover;
-          background-position: center;
-
-
-          .overlay{
-            @include basic-flex(center, start, row);
-            width: 90%;
-            height: 90%;
-            border: 2px solid $d4-white;
-            align-self: center;
-            font-family:'Noto Serif TC', serif;
-            font-size: 1.8em;
-            color: $d4-dark;
-            text-align: center;
-
-            &:hover{
-              background-color: $d4-white;
-              opacity: .8;
-            }
-          }
-        }//guided-packtripsImg
-        #hunting-Img{
-            @include basic-flex(center, center, row);
-            width: 100%;
-            height: 400px;
-            margin: 20px 0px;
-            background: url('media/imgs/hunting3.jpg') no-repeat;
-            background-size: cover;
-
-
-            .overlay{
-              @include basic-flex(center, start, row);
-              width: 90%;
-              height: 90%;
-              border: 2px solid $d4-white;
-              align-self: center;
-              font-family:'Noto Serif TC', serif;
-              text-align: center;
-              font-size: 1.8em;
-              color: $d4-dark;
-
-              &:hover{
-                background-color: $d4-white;
-                opacity: .8;
-              }
-            }
-          }//hunting-Img
-    }// feature-2-content
-  }//feature-2
+//same
 }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   #feature-2{
@@ -214,20 +167,31 @@
 
 
         .overlay{
-          @include basic-flex(center, flex-start, row);
+          @include basic-flex(flex-start, center, column);
           width: 90%;
           height: 90%;
           border: 2px solid $d4-white;
           font-family:'Noto Serif TC', serif;
           text-align: center;
-          font-size: 1.8em;
+          font-size: 2.7em;
           color: $d4-dark;
+          .hide-until-hovered{
+            display: none;
+          }
 
           &:hover{
             background-color: $d4-white;
             opacity: .8;
-          }
-        }
+            .hide-until-hovered{
+              width: 90%;
+              display: inline;
+              margin-top: 40px;
+              font-family:$master-font;
+              font-size: .75em;
+              line-height: 1.2em;
+            }//hide-until-hovered
+          }//hover
+        }//overlay
       }//mrv-imgs
 
 
@@ -242,21 +206,31 @@
 
 
           .overlay{
-            @include basic-flex(center, start, row);
-            width: 90%;
+            @include basic-flex(flex-start, center, column);            width: 90%;
             height: 90%;
             border: 2px solid $d4-white;
             align-self: center;
             font-family:'Noto Serif TC', serif;
-            font-size: 1.8em;
+            font-size: 2.7em;
             color: $d4-dark;
             text-align: center;
+            .hide-until-hovered{
+              display: none;
+            }
 
             &:hover{
               background-color: $d4-white;
               opacity: .8;
-            }
-          }
+              .hide-until-hovered{
+                width: 90%;
+                display: inline;
+                margin-top: 35px;
+                font-family:$master-font;
+                font-size: .75em;
+                line-height: 1.2em;
+              }//hide-until-hovered
+            }//hover
+          }//overlay
         }//guided-packtripsImg
         #hunting-Img{
             @include basic-flex(center, center, row);
@@ -269,21 +243,32 @@
 
 
             .overlay{
-              @include basic-flex(center, start, row);
+              @include basic-flex(flex-start, center, column);
               width: 90%;
               height: 90%;
               border: 2px solid $d4-white;
               align-self: center;
               font-family:'Noto Serif TC', serif;
               text-align: center;
-              font-size: 1.8em;
+              font-size: 2.7em;
               color: $d4-dark;
+              .hide-until-hovered{
+                display: none;
+              }
 
               &:hover{
                 background-color: $d4-white;
                 opacity: .8;
-              }
-            }
+                .hide-until-hovered{
+                  width: 90%;
+                  display: inline;
+                  margin-top: 15px;
+                  font-family:$master-font;
+                  font-size: .72em;
+                  line-height: 1.2em;
+                }//hide-until-hovered
+              }//hover
+            }//overlay
           }//hunting-Img
     }// feature-2-content
   }//feature-2
@@ -311,7 +296,7 @@
 
 
         .overlay{
-          @include basic-flex(center, flex-start, row);
+          @include basic-flex(flex-start, center, column);
           width: 90%;
           height: 90%;
           border: 2px solid $d4-white;
@@ -319,12 +304,23 @@
           text-align: center;
           font-size: 1.8em;
           color: $d4-dark;
+          .hide-until-hovered{
+            display: none;
+          }
 
           &:hover{
             background-color: $d4-white;
             opacity: .8;
-          }
-        }
+            .hide-until-hovered{
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family:$master-font;
+              font-size: .6em;
+              line-height: 1.2em;
+            }//hide-until-hovered
+          }//hover
+        }//overlay
       }//mrv-imgs
 
 
@@ -339,7 +335,7 @@
 
 
           .overlay{
-            @include basic-flex(center, start, row);
+            @include basic-flex(flex-start, center, column);
             width: 90%;
             height: 90%;
             border: 2px solid $d4-white;
@@ -348,12 +344,23 @@
             font-size: 1.8em;
             color: $d4-dark;
             text-align: center;
+            .hide-until-hovered{
+              display: none;
+            }
 
             &:hover{
               background-color: $d4-white;
               opacity: .8;
-            }
-          }
+              .hide-until-hovered{
+                width: 90%;
+                display: inline;
+                margin-top: 15px;
+                font-family:$master-font;
+                font-size: .6em;
+                line-height: 1.2em;
+              }//hide-until-hovered
+            }//hover
+          }//overlay
         }//guided-packtripsImg
         #hunting-Img{
             @include basic-flex(center, center, row);
@@ -366,7 +373,7 @@
 
 
             .overlay{
-              @include basic-flex(center, start, row);
+              @include basic-flex(flex-start, center, column);
               width: 90%;
               height: 90%;
               border: 2px solid $d4-white;
@@ -375,12 +382,23 @@
               text-align: center;
               font-size: 1.8em;
               color: $d4-dark;
+              .hide-until-hovered{
+                display: none;
+              }
 
               &:hover{
                 background-color: $d4-white;
                 opacity: .8;
-              }
-            }
+                .hide-until-hovered{
+                  width: 90%;
+                  display: inline;
+                  margin-top: 15px;
+                  font-family:$master-font;
+                  font-size: .57em;
+                  line-height: 1.2em;
+                }//hide-until-hovered
+              }//hover
+              }//overlay
           }//hunting-Img
     }// feature-2-content
   }//feature-2
@@ -388,5 +406,130 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  //same
+  #feature-2{
+    width: 100vw;
+    background-color: #F3F2F2;
+    padding: 40px 0px;
+
+    #feature-2-content{
+      width: 90%;
+      @include basic-flex(space-around, center, row);
+
+      #mrv-imgs{
+        @include basic-flex(center, center, row);
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url('media/imgs/mrv-img.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+
+
+        .overlay{
+          @include basic-flex(flex-start, center, column);
+          width: 90%;
+          height: 90%;
+          border: 2px solid $d4-white;
+          font-family:'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: $d4-dark;
+          .hide-until-hovered{
+            display: none;
+          }
+
+          &:hover{
+            background-color: $d4-white;
+            opacity: .8;
+            .hide-until-hovered{
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family:$master-font;
+              font-size: .65em;
+              line-height: 1.2em;
+            }//hide-until-hovered
+          }//hover
+        }//overlay
+      }//mrv-imgs
+
+
+        #guided-packtripsImg{
+          @include basic-flex(center, center, row);
+          width: 32%;
+          height: 300px;
+          margin: 20px 0px;
+          background: url('media/imgs/wilderness-pac.jpg') no-repeat;
+          background-size: cover;
+          background-position: bottom;
+
+
+          .overlay{
+            @include basic-flex(flex-start, center, column);
+            width: 90%;
+            height: 90%;
+            border: 2px solid $d4-white;
+            align-self: center;
+            font-family:'Noto Serif TC', serif;
+            font-size: 1.8em;
+            color: $d4-dark;
+            text-align: center;
+            .hide-until-hovered{
+              display: none;
+            }
+
+            &:hover{
+              background-color: $d4-white;
+              opacity: .8;
+              .hide-until-hovered{
+                width: 90%;
+                display: inline;
+                margin-top: 15px;
+                font-family:$master-font;
+                font-size: .65em;
+                line-height: 1.2em;
+              }//hide-until-hovered
+            }//hover
+          }//overlay
+        }//guided-packtripsImg
+        #hunting-Img{
+            @include basic-flex(center, center, row);
+            width: 32%;
+            height: 300px;
+            margin: 20px 0px;
+            background: url('media/imgs/hunting3.jpg') no-repeat;
+            background-size: cover;
+            background-position: top;
+
+
+            .overlay{
+              @include basic-flex(flex-start, center, column);
+              width: 90%;
+              height: 90%;
+              border: 2px solid $d4-white;
+              align-self: center;
+              font-family:'Noto Serif TC', serif;
+              text-align: center;
+              font-size: 1.8em;
+              color: $d4-dark;
+              .hide-until-hovered{
+                display: none;
+              }
+
+              &:hover{
+                background-color: $d4-white;
+                opacity: .8;
+                .hide-until-hovered{
+                  width: 90%;
+                  display: inline;
+                  margin-top: 15px;
+                  font-family:$master-font;
+                  font-size: .65em;
+                  line-height: 1.2em;
+                }//hide-until-hovered
+              }//hover
+              }//overlay
+          }//hunting-Img
+    }// feature-2-content
+  }//feature-2
 }

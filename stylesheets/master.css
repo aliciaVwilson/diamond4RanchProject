@@ -83,6 +83,9 @@ body {
   display: flex;
   justify-content: flex-end; }
 
+.navbar-nav {
+  margin-right: 40px; }
+
 .nav-item {
   font-family: 'Noto Serif TC', serif; }
 
@@ -109,39 +112,43 @@ body {
 #feature-1 {
   width: 100vw;
   background-color: #445576;
-  padding-top: 15px; }
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
   #feature-1 #feature-1-content {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column; }
     #feature-1 #feature-1-content h1 {
-      width: 80%;
+      width: 100%;
       font-size: 2em;
       margin: 10px 0px 10px 0px;
       font-family: 'Noto Serif TC', serif;
       color: #B2AFA4;
       text-align: center; }
     #feature-1 #feature-1-content h2 {
-      width: 80%;
+      width: 100%;
       font-size: 1.2em;
-      margin: 10px 0 10px 0;
+      margin: 10px 0 20px 0;
       font-family: 'Noto Serif TC', serif;
       color: #1D2339;
       text-align: center; }
     #feature-1 #feature-1-content .d4-divider {
-      width: 80%;
+      width: 100%;
       height: 90px;
       background-image: url("media/imgs/d4-divider.png");
       background-position: center;
       background-repeat: no-repeat; }
     #feature-1 #feature-1-content p {
-      width: 70%;
+      width: 100%;
       font-size: 1em;
       line-height: 1.45em;
       text-align: center;
-      margin: 10px 0px 20px 0px;
+      margin: 20px 0px 30px 0px;
       color: #B2AFA4; }
 
 @media (min-width: 768px) {
@@ -286,11 +293,18 @@ body {
       background: url("media/imgs/mrv-img.jpg") no-repeat;
       background-size: cover;
       background-position: bottom; }
-      #feature-2 #feature-2-content #mrv-imgs .overlay {
+      #feature-2 #feature-2-content #mrv-imgs .image-link {
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: row; }
+      #feature-2 #feature-2-content #mrv-imgs .overlay {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
         width: 90%;
         height: 90%;
         border: 2px solid #EBDFD7;
@@ -298,9 +312,18 @@ body {
         text-align: center;
         font-size: 1.8em;
         color: #1D2339; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay .hide-until-hovered {
+          display: none; }
         #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
           background-color: #EBDFD7;
           opacity: .8; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay:hover .hide-until-hovered {
+            width: 90%;
+            display: inline;
+            margin-top: 15px;
+            font-family: "Poppins";
+            font-size: .5em;
+            line-height: 1.2em; }
     #feature-2 #feature-2-content #guided-packtripsImg {
       display: flex;
       justify-content: center;
@@ -312,22 +335,38 @@ body {
       background: url("media/imgs/wilderness-pac.jpg") no-repeat;
       background-size: cover;
       background-position: center; }
-      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+      #feature-2 #feature-2-content #guided-packtripsImg .image-link {
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: start;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: row; }
+      #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
         width: 90%;
         height: 90%;
         border: 2px solid #EBDFD7;
         align-self: center;
         font-family: 'Noto Serif TC', serif;
-        font-size: 1.8em;
+        font-size: 1.9em;
         color: #1D2339;
         text-align: center; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay .hide-until-hovered {
+          display: none; }
         #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
           background-color: #EBDFD7;
           opacity: .8; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover .hide-until-hovered {
+            width: 90%;
+            display: inline;
+            margin-top: 15px;
+            font-family: "Poppins";
+            font-size: .5em;
+            line-height: 1.2em; }
     #feature-2 #feature-2-content #hunting-Img {
       display: flex;
       justify-content: center;
@@ -338,11 +377,18 @@ body {
       margin: 20px 0px;
       background: url("media/imgs/hunting3.jpg") no-repeat;
       background-size: cover; }
-      #feature-2 #feature-2-content #hunting-Img .overlay {
+      #feature-2 #feature-2-content #hunting-Img .image-link {
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: start;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: row; }
+      #feature-2 #feature-2-content #hunting-Img .overlay {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
         width: 90%;
         height: 90%;
         border: 2px solid #EBDFD7;
@@ -351,104 +397,18 @@ body {
         text-align: center;
         font-size: 1.8em;
         color: #1D2339; }
+        #feature-2 #feature-2-content #hunting-Img .overlay .hide-until-hovered {
+          display: none; }
         #feature-2 #feature-2-content #hunting-Img .overlay:hover {
           background-color: #EBDFD7;
           opacity: .8; }
-
-@media (min-width: 576px) {
-  #feature-2 {
-    width: 100vw;
-    background-color: #F3F2F2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0px; }
-    #feature-2 #feature-2-content {
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-      #feature-2 #feature-2-content #mrv-imgs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 400px;
-        margin: 20px 0px;
-        background: url("media/imgs/mrv-img.jpg") no-repeat;
-        background-size: cover;
-        background-position: bottom; }
-        #feature-2 #feature-2-content #mrv-imgs .overlay {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: row;
-          width: 90%;
-          height: 90%;
-          border: 2px solid #EBDFD7;
-          font-family: 'Noto Serif TC', serif;
-          text-align: center;
-          font-size: 1.8em;
-          color: #1D2339; }
-          #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
-            background-color: #EBDFD7;
-            opacity: .8; }
-      #feature-2 #feature-2-content #guided-packtripsImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 400px;
-        margin: 20px 0px;
-        background: url("media/imgs/wilderness-pac.jpg") no-repeat;
-        background-size: cover;
-        background-position: center; }
-        #feature-2 #feature-2-content #guided-packtripsImg .overlay {
-          display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
-          width: 90%;
-          height: 90%;
-          border: 2px solid #EBDFD7;
-          align-self: center;
-          font-family: 'Noto Serif TC', serif;
-          font-size: 1.8em;
-          color: #1D2339;
-          text-align: center; }
-          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
-            background-color: #EBDFD7;
-            opacity: .8; }
-      #feature-2 #feature-2-content #hunting-Img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 400px;
-        margin: 20px 0px;
-        background: url("media/imgs/hunting3.jpg") no-repeat;
-        background-size: cover; }
-        #feature-2 #feature-2-content #hunting-Img .overlay {
-          display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
-          width: 90%;
-          height: 90%;
-          border: 2px solid #EBDFD7;
-          align-self: center;
-          font-family: 'Noto Serif TC', serif;
-          text-align: center;
-          font-size: 1.8em;
-          color: #1D2339; }
-          #feature-2 #feature-2-content #hunting-Img .overlay:hover {
-            background-color: #EBDFD7;
-            opacity: .8; } }
+          #feature-2 #feature-2-content #hunting-Img .overlay:hover .hide-until-hovered {
+            width: 90%;
+            display: inline;
+            margin-top: 15px;
+            font-family: "Poppins";
+            font-size: .5em;
+            line-height: 1.2em; }
 
 @media (min-width: 768px) {
   #feature-2 {
@@ -478,19 +438,28 @@ body {
         background-position: center; }
         #feature-2 #feature-2-content #mrv-imgs .overlay {
           display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
           font-family: 'Noto Serif TC', serif;
           text-align: center;
-          font-size: 1.8em;
+          font-size: 2.7em;
           color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
             background-color: #EBDFD7;
             opacity: .8; }
+            #feature-2 #feature-2-content #mrv-imgs .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 40px;
+              font-family: "Poppins";
+              font-size: .75em;
+              line-height: 1.2em; }
       #feature-2 #feature-2-content #guided-packtripsImg {
         display: flex;
         justify-content: center;
@@ -504,20 +473,29 @@ body {
         background-position: center; }
         #feature-2 #feature-2-content #guided-packtripsImg .overlay {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
           align-self: center;
           font-family: 'Noto Serif TC', serif;
-          font-size: 1.8em;
+          font-size: 2.7em;
           color: #1D2339;
           text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
             background-color: #EBDFD7;
             opacity: .8; }
+            #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 35px;
+              font-family: "Poppins";
+              font-size: .75em;
+              line-height: 1.2em; }
       #feature-2 #feature-2-content #hunting-Img {
         display: flex;
         justify-content: center;
@@ -531,20 +509,29 @@ body {
         background-position: center; }
         #feature-2 #feature-2-content #hunting-Img .overlay {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
           align-self: center;
           font-family: 'Noto Serif TC', serif;
           text-align: center;
-          font-size: 1.8em;
+          font-size: 2.7em;
           color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #hunting-Img .overlay:hover {
             background-color: #EBDFD7;
-            opacity: .8; } }
+            opacity: .8; }
+            #feature-2 #feature-2-content #hunting-Img .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .72em;
+              line-height: 1.2em; } }
 
 @media (min-width: 992px) {
   #feature-2 {
@@ -570,9 +557,9 @@ body {
         background-position: center; }
         #feature-2 #feature-2-content #mrv-imgs .overlay {
           display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
@@ -580,9 +567,18 @@ body {
           text-align: center;
           font-size: 1.8em;
           color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
             background-color: #EBDFD7;
             opacity: .8; }
+            #feature-2 #feature-2-content #mrv-imgs .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .6em;
+              line-height: 1.2em; }
       #feature-2 #feature-2-content #guided-packtripsImg {
         display: flex;
         justify-content: center;
@@ -596,9 +592,9 @@ body {
         background-position: bottom; }
         #feature-2 #feature-2-content #guided-packtripsImg .overlay {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
@@ -607,9 +603,18 @@ body {
           font-size: 1.8em;
           color: #1D2339;
           text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
             background-color: #EBDFD7;
             opacity: .8; }
+            #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .6em;
+              line-height: 1.2em; }
       #feature-2 #feature-2-content #hunting-Img {
         display: flex;
         justify-content: center;
@@ -623,9 +628,9 @@ body {
         background-position: top; }
         #feature-2 #feature-2-content #hunting-Img .overlay {
           display: flex;
-          justify-content: center;
-          align-items: start;
-          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
           width: 90%;
           height: 90%;
           border: 2px solid #EBDFD7;
@@ -634,9 +639,137 @@ body {
           text-align: center;
           font-size: 1.8em;
           color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay .hide-until-hovered {
+            display: none; }
           #feature-2 #feature-2-content #hunting-Img .overlay:hover {
             background-color: #EBDFD7;
-            opacity: .8; } }
+            opacity: .8; }
+            #feature-2 #feature-2-content #hunting-Img .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .57em;
+              line-height: 1.2em; } }
+
+@media (min-width: 1200px) {
+  #feature-2 {
+    width: 100vw;
+    background-color: #F3F2F2;
+    padding: 40px 0px; }
+    #feature-2 #feature-2-content {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row; }
+      #feature-2 #feature-2-content #mrv-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/mrv-img.jpg") no-repeat;
+        background-size: cover;
+        background-position: center; }
+        #feature-2 #feature-2-content #mrv-imgs .overlay {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay .hide-until-hovered {
+            display: none; }
+          #feature-2 #feature-2-content #mrv-imgs .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+            #feature-2 #feature-2-content #mrv-imgs .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .65em;
+              line-height: 1.2em; }
+      #feature-2 #feature-2-content #guided-packtripsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/wilderness-pac.jpg") no-repeat;
+        background-size: cover;
+        background-position: bottom; }
+        #feature-2 #feature-2-content #guided-packtripsImg .overlay {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          font-size: 1.8em;
+          color: #1D2339;
+          text-align: center; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay .hide-until-hovered {
+            display: none; }
+          #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+            #feature-2 #feature-2-content #guided-packtripsImg .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .65em;
+              line-height: 1.2em; }
+      #feature-2 #feature-2-content #hunting-Img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 32%;
+        height: 300px;
+        margin: 20px 0px;
+        background: url("media/imgs/hunting3.jpg") no-repeat;
+        background-size: cover;
+        background-position: top; }
+        #feature-2 #feature-2-content #hunting-Img .overlay {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          width: 90%;
+          height: 90%;
+          border: 2px solid #EBDFD7;
+          align-self: center;
+          font-family: 'Noto Serif TC', serif;
+          text-align: center;
+          font-size: 1.8em;
+          color: #1D2339; }
+          #feature-2 #feature-2-content #hunting-Img .overlay .hide-until-hovered {
+            display: none; }
+          #feature-2 #feature-2-content #hunting-Img .overlay:hover {
+            background-color: #EBDFD7;
+            opacity: .8; }
+            #feature-2 #feature-2-content #hunting-Img .overlay:hover .hide-until-hovered {
+              width: 90%;
+              display: inline;
+              margin-top: 15px;
+              font-family: "Poppins";
+              font-size: .65em;
+              line-height: 1.2em; } }
 
 .feature-3 {
   width: 100vw;
@@ -691,7 +824,7 @@ body {
 @media (min-width: 768px) {
   .feature-3 {
     width: 100vw;
-    height: 1000px;
+    height: 1600px;
     background-image: url("media/imgs/faded-background.jpg");
     background-size: cover;
     display: flex;
@@ -739,8 +872,65 @@ body {
         .feature-3 .feature-3-container .button:hover {
           background-color: #B2AFA4; } }
 
+#feature-4 {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #feature-4 #feature-4-content {
+    width: 80%; }
+    #feature-4 #feature-4-content h1 {
+      font-size: 2em;
+      font-family: 'Noto Serif TC', serif;
+      text-align: center; }
+    #feature-4 #feature-4-content #review {
+      width: 100%;
+      font-size: 1.2em;
+      line-height: 1.45em;
+      margin: 40px 0px 40px 0px;
+      color: #1D2339; }
+    #feature-4 #feature-4-content p {
+      align-self: flex-end;
+      width: 100%;
+      font-size: 1em;
+      line-height: 1.45em;
+      margin: 40px 0px 40px 0px;
+      color: #1D2339;
+      text-align: left; }
+
+@media (min-width: 768px) {
+  #feature-4 {
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #feature-4 #feature-4-content {
+      width: 80%; }
+      #feature-4 #feature-4-content h1 {
+        font-size: 3em;
+        font-family: 'Noto Serif TC', serif;
+        text-align: center; }
+      #feature-4 #feature-4-content #review {
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.45em;
+        margin: 40px 0px 40px 0px;
+        color: #1D2339; }
+      #feature-4 #feature-4-content p {
+        align-self: flex-end;
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.45em;
+        margin: 40px 0px 40px 0px;
+        color: #1D2339;
+        text-align: left; } }
+
 body {
   background-color: #EBDFD7;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1D2339;
   width: 100vw; }

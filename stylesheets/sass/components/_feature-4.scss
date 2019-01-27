@@ -1,10 +1,10 @@
 // ***FEATURE 4 PARTIAL ***
 
-.feature-4{
+#feature-4{
   width: 100vw;
   padding: 30px;
   @include basic-flex(center, center, column);
-  .feature-4-content{
+  #feature-4-content{
     width: 80%;
     h1{
       font-size: 2em;
@@ -50,7 +50,7 @@
       }
       #review{
         width: 100%;
-        font-size: 1.75em;
+        font-size: 1.5em;
         line-height: 1.45em;
         margin: 40px 0px 40px 0px;
         color: $d4-dark;
