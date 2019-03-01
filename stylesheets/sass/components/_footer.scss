@@ -1,0 +1,22 @@
+// Footer partial
+
+footer{
+  background-color: $d4-dark;
+  color: $d4-white;
+  padding: 50px;
+  @include basic-flex(space-around);
+  .img{
+    width: 240px;
+    height: 200px;
+    background-image: url('../../stylesheets/media/imgs/fake-award.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .footer-contact{
+    line-height: 1.45em;
+  }
+  .footer-list{
+    line-height: 2em;
+  }
+
+}

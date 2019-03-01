@@ -881,6 +881,18 @@ body {
   flex-direction: column; }
   #feature-4 #feature-4-content {
     width: 80%; }
+    #feature-4 #feature-4-content .img-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      padding: 40px 20px 10px 20px; }
+      #feature-4 #feature-4-content .img-container .img {
+        width: 240px;
+        height: 200px;
+        background-image: url("../../stylesheets/media/imgs/fake-award.png");
+        background-repeat: no-repeat;
+        background-size: contain; }
     #feature-4 #feature-4-content h1 {
       font-size: 2em;
       font-family: 'Noto Serif TC', serif;
@@ -928,6 +940,25 @@ body {
         margin: 40px 0px 40px 0px;
         color: #1D2339;
         text-align: left; } }
+
+footer {
+  background-color: #1D2339;
+  color: #EBDFD7;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row; }
+  footer .img {
+    width: 240px;
+    height: 200px;
+    background-image: url("../../stylesheets/media/imgs/fake-award.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  footer .footer-contact {
+    line-height: 1.45em; }
+  footer .footer-list {
+    line-height: 2em; }
 
 body {
   background-color: #EBDFD7;

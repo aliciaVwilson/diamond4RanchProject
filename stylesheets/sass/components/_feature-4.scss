@@ -6,6 +6,17 @@
   @include basic-flex(center, center, column);
   #feature-4-content{
     width: 80%;
+    .img-container{
+      @include basic-flex(space-around, center);
+      padding: 40px 20px 10px 20px;
+      .img{
+        width: 240px;
+        height: 200px;
+        background-image: url('../../stylesheets/media/imgs/fake-award.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
     h1{
       font-size: 2em;
       font-family: 'Noto Serif TC', serif;
