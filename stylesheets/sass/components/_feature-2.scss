@@ -10,18 +10,30 @@
   #feature-2-content{
     width: 90%;
     @include basic-flex(center, center, column);
-      #mrv-imgs{
-        @include basic-flex(center, center, row);
-        width: 100%;
-        height: 300px;
-        margin: 20px 0px;
-        background: url('media/imgs/mrv-img.jpg') no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        .image-link{
-          height: 100%;
-          width: 100%;
-          @include basic-flex(center, center, row);
+    #mrv-imgs{
+      @include basic-flex(center, center, row);
+      width: 400px;
+      height: 300px;
+      background: url('media/imgs/mrv-img.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      // 2
+
+
+      .overlay{
+        @include basic-flex(center, flex-start, row);
+        width: 90%;
+        height: 90%;
+        border: 2px solid $d4-white;
+        font-family:'Noto Serif TC', serif;
+        text-align: center;
+        font-size: 1.8em;
+        color: $d4-dark;
+
+        &:hover{
+          @extend %fake-link;
+          background-color: $d4-white;
+          opacity: .8;
         }
         .overlay{
           @include basic-flex(flex-start, center, column);
